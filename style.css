@@ -1,0 +1,14 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+
+ul > li {
+    list-style-type: none;
+}
+
+/* Clases por meter:
+    -parte1
+    -barra-inicial
+    -contenido
+    -fin */
