@@ -1,5 +1,16 @@
+<script language="javascript" type="text/javascript">
+    function verTABLA1() {
+        var x = document.getElementById("tabla1");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +18,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Panes</title>
 </head>
+
 <body>
     <!-- Header y Navegación -->
     <section class="parte1">
@@ -36,7 +48,52 @@
 
     <!-- Contenido -->
     <section class="contenido">
+        <article class="articulo">
+            <img src="img/pan-trigo.jpg" alt="">
+            <h1>Pan de trigo</h1>
+            <br>
+            <p>La harina de trigo es la más utilizada para la elaboración de pan. De hecho, algunos panes elaborados con
+                otras harinas suelen llevar también algún porcentaje de trigo.</p>
+            <br>
+            <button class="button">Learn more</button>
+        </article>
 
+        <article class="articulo">
+            <img src="img/pan-centeno.jpg" alt="">
+            <h1>Pan de centeno</h1>
+            <br>
+            <p>Contiene menos gluten que otros cereales y eso es lo que le da una apariencia más compacta. Su miga es de
+                apariencia más oscura, y tiene un sabor amargo muy característico.
+            </p>
+            <br>
+            <button class="button">Learn More</button>
+        </article>
+    </section>
+
+    <div id="tabla1" style="display:none">
+        <section class="contenido">
+            <article class="articulo">
+                <img src="img/pan-espelta.jpg" alt="">
+                <h1>Pan de espelta</h1>
+                <br>
+                <p>La espelta es una variedad del trigo más digerible que el trigo común gracias a que contiene más cantidad de fibra pero menos gluten (al igual que ocurre con el centeno).</p>
+                <br>
+                <button class="button">Learn more</button>
+            </article>
+
+            <article class="articulo">
+                <img src="img/pan-maiz.jpg" alt="">
+                <h1>Pan de maíz</h1>
+                <br>
+                <p>Se elabora con harina de maíz que no contiene gluten, lo que hace que sea un pan apto para celíacos.
+                </p>
+                <br>
+                <button class="button">Learn More</button>
+            </article>
+    </div>
+    <div class="boton">
+        <button type="button" class="button" onclick="verTABLA1()">ver</button>
+    </div>
     </section>
 
     <!-- Footer -->
@@ -47,4 +104,5 @@
         </footer>
     </section>
 </body>
+
 </html>
