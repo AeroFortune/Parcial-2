@@ -21,28 +21,44 @@
 
 <body>
     <!-- Header y Navegación -->
-    <section class="parte1">
+    <section class="intro">
         <header class="barra-inicial">
             <!-- Thread of Bread es el titulo que le di a la página, sientanse libres de dar sugerencias xd -->
-            <h3>Thread of Bread</h3>
             <nav>
-                <ul>
-                    <li>Inicio</li>
-                    <li>Elementos</li>
-                    <li>Generico</li>
+                <ul class="barra-nav">
+                    <li class="titulo">Thread of Bread</li>
+                    <li class="boton-nav"><a href="">Elementos</a></li>
+                    <li class="boton-nav"><a href="">Generico</a></li>
+                    <li class="boton-nav"><a href="">Inicio</a></li>
                 </ul>
             </nav>
+            <br>
+            <hr>
         </header>
 
         <!-- Introducción -->
-        <section class="intro">
-            <h1>Bienvenido al Mundo del Pan</h1>
-            <ul>
-                <li>Pan 1</li>
-                <li>Pan 2</li>
-                <li>Pan 3</li>
+        <section class="bienvenida">
+            <h1 class="titulo-bienvenida">Bienvenido al Mundo del Pan</h1><br>
+            <ul class="featured">
+                <li class="featured-list">
+                    <img src="img/iconos/bread.png" alt="Pan" class="featured-icon"><br>
+                    <h3>Lleno de fibra y proteínas</h3>
+                    <p>Come menos y te llenas más.</p>
+                </li>
+                <div class="v1"></div>
+                <li class="featured-list">
+                    <img src="img/iconos/trans-fat.png" alt="Grasas" class="featured-icon"><br>
+                    <h3>Bajo en grasas</h3>
+                    <p>Bueno para reducir riesgos.</p>
+                </li>
+                <div class="v1"></div>
+                <li class="featured-list">
+                    <img src="img/iconos/gas-pump.png" alt="Combustible" class="featured-icon"><br>
+                    <h3>Combustible para tu cuerpo</h3>
+                    <p>Le proporciona a tu cuerpo más nutrientes.</p>
+                </li>
             </ul>
-            <input type="button" value="Empezar">
+            <div class="boton"><button class="button">Empezar</button></div>
         </section>
     </section>
 
@@ -55,7 +71,7 @@
             <p>La harina de trigo es la más utilizada para la elaboración de pan. De hecho, algunos panes elaborados con
                 otras harinas suelen llevar también algún porcentaje de trigo.</p>
             <br>
-            <button class="button">Learn more</button>
+            <button class="button">Aprende más</button>
         </article>
 
         <article class="articulo">
@@ -66,7 +82,7 @@
                 apariencia más oscura, y tiene un sabor amargo muy característico.
             </p>
             <br>
-            <button class="button">Learn More</button>
+            <button class="button">Aprende más</button>
         </article>
     </section>
 
@@ -91,7 +107,7 @@
                 <button class="button">Learn More</button>
             </article>
     </div>
-    <div class="boton">
+    <div class="boton" style="padding-bottom: 30px;">
         <button type="button" class="button" onclick="verTABLA1()">ver</button>
     </div>
     </section>
