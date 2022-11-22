@@ -11,7 +11,12 @@ function ObtenerDatos(){
 }
 
 function MapearPan(){
-    let contenedor = document.getElementById('');
+    let contenedor = document.getElementById('id');
+    for(let i=0;i<panes.length;i++){
+        contenedor.innerHTML+=MapearPlantilla(panes[]);
+    }
+
+}
 
 }
 
